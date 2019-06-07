@@ -35,6 +35,7 @@ header {
 
 .navbar-content__li:hover {
   background-color: #49525e;
+  transition: 0.5s ease;
 }
 
 .navbar-content__a {
