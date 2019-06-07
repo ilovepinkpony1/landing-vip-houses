@@ -1,4 +1,4 @@
-main {
+.wrapper-main {
   width: 860px;
   margin: 0 auto;
 }
@@ -7,6 +7,7 @@ main {
   flex-direction: row;
   margin-top: 200px;
   justify-content: center;
+  position: relative;
 }
 
 .description-illustrations__parks {
@@ -34,6 +35,10 @@ main {
   font-size: 36px;
   line-height: 48px;
   color: #d4c17f;
+}
+
+.main-flats-images {
+  position: relative;
 }
 
 .main-flats-row {
@@ -68,9 +73,10 @@ main {
 }
 
 .more-info {
-  margin-top: 180px;
+  padding: 180px 0;
   display: flex;
   flex-direction: row;
+  background: url('./img/footer-img.jpg') no-repeat center center;
 }
 
 .more-info-caption {
@@ -80,6 +86,7 @@ main {
   font-size: 36px;
   line-height: 48px;
   color: #d4c17f;
+  margin-bottom: 25px;
 }
 
 .more-info__text {
@@ -91,9 +98,55 @@ main {
 }
 
 .main-video {
-  margin: 180px 0;
+  margin-bottom: 180px;
   display: flex;
   justify-content: center;
+  position: relative;
+  z-index: 999;
+}
+
+.main-video video {
+  outline: none;
+  opacity: 0.8;
+  position: relative;
+}
+
+.controll {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#video-button {
+  background: none;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.main-video:hover #video-button {
+  opacity: 1;
+}
+
+#video-button:before {
+  font-family: 'Font Awesome 5 Free';
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  font-size: 100px;
+  color: #d4c17f;
+  -webkit-font-smoothing: antialiased;
+}
+
+#video-button.play:before {
+  content: '\f144';
+}
+
+#video-button.pouse:before {
+  content: '\f28b';
 }
 
 .main-map__caption {
@@ -108,6 +161,7 @@ main {
 
 .main-map {
   margin-bottom: 180px;
+  position: relative;
 }
 
 .main-other__caption {
@@ -126,11 +180,166 @@ main {
   font-weight: normal;
   font-size: 13px;
   line-height: 16px;
-  color: #E7E7E7;
+  color: #e7e7e7;
 }
 
 .main-other {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.more-info__form-input {
+  width: 255px;
+  height: 50px;
+  background: #ffffff;
+  opacity: 0.2;
+  margin: 35px 0;
+  color: #000;
+  text-align: center;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 27px;
+}
+
+.more-info__right {
+  margin-left: 35px;
+  display: flex;
+  align-content: flex-end;
+}
+
+iframe {
+  opacity: 0.7;
+}
+
+.more-info__form {
+  display: flex;
+  flex-direction: row;
+}
+
+.more-info__flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.more-info__form-text {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 16px;
+  text-align: center;
+  color: #e7e7e7;
+  width: 255px;
+}
+
+.more-info__form-button {
+  width: 255px;
+  height: 50px;
+  background-color: #d4c17f;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 27px;
+  text-align: center;
+  color: #ffffff;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.form-left__wrap {
+  margin-right: 30px;
+}
+
+.large-number {
+  position: absolute;
+  width: 301px;
+  height: 507px;
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 400px;
+  line-height: 533px;
+  text-align: center;
+  color: #ffffff;
+  opacity: 0.05;
+}
+
+.large-number__two {
+  top: 500px;
+  right: 100px;
+}
+
+.large-number__three {
+  top: -150px;
+  left: -200px;
+}
+
+.large-number__four {
+  top: -200px;
+  left: -100px;
+}
+
+.large-number__five {
+  top: -100px;
+  left: -200px;
+  overflow: hidden;
+}
+
+.main-other__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-other__left {
+  margin-right: 35px;
+}
+
+.main-other__right {
+  display: flex;
+  padding-right: 50px;
+}
+
+.main-other__form-input {
+  width: 255px;
+  height: 50px;
+  opacity: 0.2;
+  background: #fff;
+  text-align: center;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 27px;
+  outline: none;
+  color: #000;
+  border: none;
+  margin-bottom: 15px;
+}
+
+
+
+.main-other__form-button {
+  width: 255px;
+  height: 50px;
+  background-color: #d4c17f;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 27px;
+  text-align: center;
+  color: #ffffff;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: 1s all ease;
+}
+
+.form-button:hover {
+  background-color: #a79247;
 }

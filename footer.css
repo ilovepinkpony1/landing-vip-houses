@@ -6,9 +6,9 @@ footer {
   margin-top: 180px;
 }
 
-.wrapper {
+.wrapper-footer {
   width: 860px;
-    display: flex;
+  display: flex;
   justify-content: space-between;
 }
 
@@ -18,7 +18,13 @@ footer {
 
 .footer-about__a {
   text-decoration: none;
+  transition: 0.3s ease-in-out;
 }
+
+.footer-about__a:hover {
+  color: #d4c17f;
+}
+
 
 .footer-about__li {
   margin-bottom: 15px;

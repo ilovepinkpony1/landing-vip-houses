@@ -17,3 +17,14 @@ body {
 font-family: 'Roboto', sans-serif;
 font-family: 'Playfair Display', serif;
 font-family: 'Anton', sans-serif; */
+
+
+.visible-el {
+  opacity: 1;
+  transition: 2s ease;
+}
+
+.hidden-el {
+  opacity: 0;
+  transition: 2s ease;
+}

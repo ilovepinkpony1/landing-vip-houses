@@ -59,7 +59,6 @@ header {
   transition: all 0.3s linear;
 }
 
-.navbar-content__a:hover .line{
+.navbar-content__a:hover .line {
   transform: translate(0, 0);
 }
-
