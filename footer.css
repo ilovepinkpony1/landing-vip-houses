@@ -1,0 +1,29 @@
+footer {
+  background-color: #2D343C;;
+  padding: 60px 0;
+  display: flex;
+  justify-content: center;
+  margin-top: 180px;
+}
+
+.wrapper {
+  width: 860px;
+    display: flex;
+  justify-content: space-between;
+}
+
+.footer-about__ul {
+  list-style: none;
+}
+
+.footer-about__a {
+  text-decoration: none;
+}
+
+.footer-about__li {
+  margin-bottom: 15px;
+}
+
+.footer-about__li:last-child {
+  margin-bottom: 0;
+}

@@ -1,0 +1,136 @@
+main {
+  width: 860px;
+  margin: 0 auto;
+}
+.description-illustrations {
+  display: flex;
+  flex-direction: row;
+  margin-top: 200px;
+  justify-content: center;
+}
+
+.description-illustrations__parks {
+  display: flex;
+  flex-direction: column;
+  margin: 0 35px;
+}
+
+.description-illustrations__parks-img {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 53px;
+}
+
+.description-illustrations__parks-text {
+  text-align: center;
+}
+
+.main-about {
+  margin-top: 120px;
+  margin-bottom: 100px;
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 48px;
+  color: #d4c17f;
+}
+
+.main-flats-row {
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 30px;
+}
+
+.main-flats-row:last-child {
+  margin-bottom: 0;
+}
+
+.main-flat {
+  margin: 0 30px;
+  position: relative;
+}
+
+.main-flat img {
+  width: 400px;
+}
+
+.main-flat__about {
+  position: absolute;
+  left: 25px;
+  bottom: 25px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.more-info {
+  margin-top: 180px;
+  display: flex;
+  flex-direction: row;
+}
+
+.more-info-caption {
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 48px;
+  color: #d4c17f;
+}
+
+.more-info__text {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.main-video {
+  margin: 180px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.main-map__caption {
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 48px;
+  color: #d4c17f;
+  margin-bottom: 100px;
+}
+
+.main-map {
+  margin-bottom: 180px;
+}
+
+.main-other__caption {
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 48px;
+  color: #d4c17f;
+}
+
+.main-other__warning {
+  margin-top: 61px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 16px;
+  color: #E7E7E7;
+}
+
+.main-other {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

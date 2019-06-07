@@ -1,0 +1,49 @@
+.header-large {
+  position: relative;
+  height: 100vh;
+  background: url('./img/main-img.jpg') no-repeat center center;
+}
+
+.header-large__caption {
+  padding-top: 120px;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Playfair Display', serif;
+  font-size: 48px;
+  line-height: 64px;
+  color: #d4c17f;
+  user-select: none;
+}
+
+.header-info {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.header-info span {
+  margin: 0 50px;
+  position: relative;
+}
+
+.header-info a {
+  text-decoration: none;
+}
+
+.header-info__location::before {
+  content: url('./img/loaction.svg');
+  position: absolute;
+  left: -25px;
+  top: -2px;
+}
+
+.header-info__telephone::before {
+  content: url('./img/phone.svg');
+  position: absolute;
+  left: -30px;
+  top: -2px;
+}
