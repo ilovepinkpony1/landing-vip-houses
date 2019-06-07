@@ -1,6 +1,6 @@
 const tl = new TimelineMax();
 
-tl.fromTo('.logo-header', 1, {
+tl.fromTo('.logo-header', 1.5, {
     x: -70,
     opacity: 0
   }, {
