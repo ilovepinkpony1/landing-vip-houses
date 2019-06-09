@@ -29,8 +29,6 @@ button.addEventListener('click', () => {
 })
 
 window.addEventListener('scroll', () => {
-  console.log(window.scrollY);
-
   hideElements(hiddeElementsParks, 430, 1100);
   hideElements(hiddenFlats, 800, 1800);
   hideElements(hiddenAbout, 730, 1200);
@@ -39,9 +37,6 @@ window.addEventListener('scroll', () => {
   hideElements(hiddenVideo, 1900, 2900);
   hideElements(hiddenMap, 2700, 3500);
   hideElements(hiddenOther, 3300, 4000);
-
-
-
 })
 
 function hideElements(elements, rangeMin, rangeMax) {
