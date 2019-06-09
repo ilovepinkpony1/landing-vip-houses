@@ -10,6 +10,11 @@ const hiddenVideo = document.querySelectorAll('.main-video');
 const hiddenMap = document.querySelectorAll('.main-map');
 const hiddenOther = document.querySelectorAll('.main-other');
 
+window.addEventListener('load', () => {
+  const preloader = document.querySelector('.preloader');
+  preloader.classList.add('preloader-loaded');
+})
+
 button.addEventListener('click', () => {
   if (video.paused) {
     button.classList.remove('play');

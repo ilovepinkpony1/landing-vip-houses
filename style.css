@@ -13,11 +13,6 @@ body {
   min-width: 1000px;
   background-color: #242b33;
 }
-/* font-family: 'Raleway', sans-serif;
-font-family: 'Roboto', sans-serif;
-font-family: 'Playfair Display', serif;
-font-family: 'Anton', sans-serif; */
-
 
 .visible-el {
   opacity: 1;
@@ -27,4 +22,45 @@ font-family: 'Anton', sans-serif; */
 .hidden-el {
   opacity: 0;
   transition: 2s ease;
+}
+
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#5c6e83, #242b33);
+  opacity: 1;
+  visibility: visible;
+  z-index: 99999;
+  transition: 1s ease;
+}
+
+.loader {
+  width: 75px;
+  height: 75px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  border: 10px solid #a79247;
+  border-radius: 50%;
+  border-top-color: #fff;
+  transform: translate(-50%, -50%);
+  animation: load 1s infinite linear;
+}
+
+.preloader-loaded {
+  opacity: 0;
+  visibility: hidden;
+}
+
+@keyframes load {
+  from {
+      transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  to {
+      transform: translate(-50%, -50%) rotate(360deg);
+  }
 }
