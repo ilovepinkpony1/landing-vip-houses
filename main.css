@@ -192,16 +192,17 @@
 .more-info__form-input {
   width: 255px;
   height: 50px;
-  background: #ffffff;
-  opacity: 0.2;
+  background: rgb(255, 255, 255, 0.2);
   margin: 35px 0;
-  color: #000;
+  color: #fff;
   text-align: center;
   font-family: Raleway;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 27px;
+  outline: none;
+  border: none;
 }
 
 .more-info__right {
@@ -307,8 +308,7 @@ iframe {
 .main-other__form-input {
   width: 255px;
   height: 50px;
-  opacity: 0.2;
-  background: #fff;
+  background: rgb(255, 255, 255, 0.2);
   text-align: center;
   font-family: Raleway;
   font-style: normal;
@@ -316,7 +316,7 @@ iframe {
   font-size: 14px;
   line-height: 27px;
   outline: none;
-  color: #000;
+  color: #fff;
   border: none;
   margin-bottom: 15px;
 }
@@ -326,7 +326,7 @@ iframe {
 .main-other__form-button {
   width: 255px;
   height: 50px;
-  background-color: #d4c17f;
+  background-color: #e2c764;
   font-family: Raleway;
   font-style: normal;
   font-weight: bold;
@@ -342,4 +342,10 @@ iframe {
 
 .form-button:hover {
   background-color: #a79247;
+}
+
+.main-flat:hover {
+  transform: scale(1.1);
+  box-shadow:  0px 0px 70px -30px #e2c764;
+  cursor: pointer;
 }
